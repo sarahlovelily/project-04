@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactive Photo Gallery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+<body>
+
+  <div class="search">
+
+    <form action="#" method="get" class="form" ></form>
+
+        <input type="search" name="search" placeholder="search..." id="search_input" data-list=".search_list">
+        <!-- <input type="submit" value="Search" class="button"> -->
+
+  </div>
+ <ul class="search_list">
+	<li  data-title="
+				I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+
+	      <div class="photo-container">
+
+	          <a class="image-link" href="images/01.jpg" data-lightbox="01" data-title="
+	                I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+	            <img class="image" src="images/thumbnails/01.jpg" alt="Hay Bales" /></a>
+
+	      </div></li>
+
+		<li data-title="
+					The lake was so calm today. We had a great view of the snow on the mountains from here.">
+      <div class="photo-container">
+
+          <a class="image-link" href="images/02.jpg" data-lightbox="01" data-title="
+                The lake was so calm today. We had a great view of the snow on the mountains from here.">
+            <img class="image" src="images/thumbnails/02.jpg" alt="Lake" /></a>
+
+      </div></li>
+
+<li data-title="
+	I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+			<div class="photo-container">
+
+          <a class="image-link" href="images/03.jpg" data-lightbox="01" data-title="
+            I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+            <img class="image" src="images/thumbnails/03.jpg" alt="Canyon" /></a>
+
+      </div></li>
+
+<li data-title="
+		It was amazing to see an iceberg up close, it was so cold but didn’t snow today. ">
+      <div class="photo-container">
+
+          <a class="image-link" href="images/04.jpg" data-lightbox="01" data-title="
+              It was amazing to see an iceberg up close, it was so cold but didn’t snow today. ">
+            <img class="image" src="images/thumbnails/04.jpg" alt="Iceberg" /></a>
+
+      </div></li>
+
+<li data-title="
+		The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+		  <div class="photo-container">
+
+          <a class="image-link" href="images/05.jpg" data-lightbox="01" data-title="
+              The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+            <img class="image" src="images/thumbnails/05.jpg" alt="Dessert" /></a>
+
+      </div></li>
+
+<li data-title="
+Fall is coming, I love when the leaves on the trees start to change color.">
+      <div class="photo-container">
+
+          <a class="image-link" href="images/06.jpg" data-lightbox="01" data-title="
+Fall is coming, I love when the leaves on the trees start to change color.">
+            <img class="image" src="images/thumbnails/06.jpg" alt="Fall" /></a>
+
+      </div></li>
+
+<li data-title="
+I drove past this plantation yesterday, everything is so green!">
+      <div class="photo-container">
+
+          <a class="image-link" href="images/07.jpg" data-lightbox="01" data-title="
+        I drove past this plantation yesterday, everything is so green!">
+            <img class="image" src="images/thumbnails/07.jpg" alt="Plantation" /></a>
+
+      </div></li>
+
+<li data-title="
+My summer vacation to the Oregon Coast. I love the sandy dunes!">
+	    <div class="photo-container">
+
+          <a class="image-link" href="images/08.jpg" data-lightbox="01" data-title="
+          My summer vacation to the Oregon Coast. I love the sandy dunes!">
+            <img class="image" src="images/thumbnails/08.jpg" alt="Dunes" /></a>
+
+      </div></li>
+
+<li data-title="
+We enjoyed a quiet stroll down this countryside lane. ">
+      <div class="photo-container">
+
+          <a class="image-link" href="images/09.jpg" data-lightbox="01" data-title="
+          We enjoyed a quiet stroll down this countryside lane. ">
+            <img class="image" src="images/thumbnails/09.jpg" alt="Countryside Lane" /></a>
+
+      </div></li>
+
+<li data-title="
+Sunset at the coast! The sky turned a lovely shade of orange.">
+		  <div class="photo-container">
+
+          <a class="image-link" href="images/10.jpg" data-lightbox="01" data-title="
+        Sunset at the coast! The sky turned a lovely shade of orange.">
+            <img class="image" src="images/thumbnails/10.jpg" alt="Sunset" /></a>
+
+      </div></li>
+
+<li data-title="
+I did a tour of a cave today and the view of the landscape below was breathtaking.">
+		  <div class="photo-container">
+
+          <a class="image-link" href="images/11.jpg" data-lightbox="01" data-title="
+          I did a tour of a cave today and the view of the landscape below was breathtaking.">
+            <img class="image" src="images/thumbnails/11.jpg" alt="Cave" /></a>
+
+      </div></li>
+
+<li data-title="
+	I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+      <div class="photo-container">
+
+          <a class="image-link" href="images/12.jpg" data-lightbox="01" data-title="
+            I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+            <img class="image" src="images/thumbnails/12.jpg" alt="Bluebells" /></a>
+
+      </div></li>
+
+</ul>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script>
+       lightbox.option({
+        'showImageNumberLabel': false,
+        'alwaysShowNavOnTouchDevices': true,
+      });
+			// $('#search_input').hideseek({
+      //   attribute: "data-title"
+			// }).toLowerCase();
+
+			// searchbox jquery
+			$("#search_input").keyup(function(){
+
+		         // Retrieve the input field text and reset the count to zero
+		         var filter = $(this).val();
+
+		         // Loop through the comment list
+		         $(".search_list li").each(function(){
+
+		             // If the list item does not contain the text phrase fade it out
+		             if ($(this).attr("data-title").toLowerCase().search(new RegExp(filter, "i")) < 0) {
+		                 $(this).hide();
+
+		             // Show the list item if the phrase matches and increase the count by 1
+		             } else {
+		                 $(this).show();
+									 }
+								 });
+							 });
+
+  </script>
+</body>
+</html>
